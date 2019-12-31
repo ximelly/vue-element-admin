@@ -223,36 +223,6 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/charts',
-    component: 'layout/Layout',
-    redirect: 'noRedirect',
-    name: 'Charts',
-    meta: {
-      title: 'Charts',
-      icon: 'chart'
-    },
-    children: [
-      {
-        path: 'keyboard',
-        component: 'views/charts/keyboard',
-        name: 'KeyboardChart',
-        meta: { title: 'Keyboard Chart', noCache: true }
-      },
-      {
-        path: 'line',
-        component: 'views/charts/line',
-        name: 'LineChart',
-        meta: { title: 'Line Chart', noCache: true }
-      },
-      {
-        path: 'mixchart',
-        component: 'views/charts/mixChart',
-        name: 'MixChart',
-        meta: { title: 'Mix Chart', noCache: true }
-      }
-    ]
-  },
-  {
     path: '/nested',
     component: 'layout/Layout',
     redirect: '/nested/menu1/menu1-1',
